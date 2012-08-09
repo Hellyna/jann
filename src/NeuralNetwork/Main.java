@@ -1,13 +1,7 @@
-/**
- * 
- */
 package NeuralNetwork;
 
 import java.util.ArrayList;
-/**
- * @author Hellyna
- *
- */
+
 public class Main {
 
     public static void main(String[] args) {
