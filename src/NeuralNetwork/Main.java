@@ -1,7 +1,13 @@
+/**
+ * 
+ */
 package NeuralNetwork;
 
 import java.util.ArrayList;
-
+/**
+ * @author Hellyna
+ *
+ */
 public class Main {
 
     public static void main(String[] args) {
@@ -25,14 +31,14 @@ public class Main {
         targetOutput.add(targetOutput3);
         targetOutput.add(targetOutput4);
         
-        int[] config = {2, 4, 4, 4, 4, 1};
-        int[] weightRange = {-2, 2};
-        long rounds = 100000;
-        double learningRate = 0.3;
+        int[] config = {2, 3, 1};
+        int[] weightRange = {-1, 1};
+        double learningRate = 0.1;
+        double tolerance = 0.01;
         
         try {
             NeuralNetwork nn = new NeuralNetwork(
-                    config, targetInput, targetOutput, weightRange, learningRate, rounds);
+                    config, targetInput, targetOutput, weightRange, learningRate, tolerance);
             nn.train();
         } catch (Exception e) {
             e.printStackTrace();
