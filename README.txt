@@ -1,0 +1,1 @@
+This is a netbeans project folder. Clone this directory into a new directory, and open in netbeans.
